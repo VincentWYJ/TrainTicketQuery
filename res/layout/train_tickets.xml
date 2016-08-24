@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#ffffffff" >
+
+    <TextView
+        android:id="@+id/ticker_info_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ff000000"
+        android:padding="15dp" />
+    
+    <View 
+        style="@style/TrainLine" />
+    
+    <ListView
+        android:id="@+id/train_tickets"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp" />
+    
+    <View
+        style="@style/TrainLine" />
+    
+    <TextView
+		android:id="@+id/tickets_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/confirm"
+        android:textColor="#ff000000"
+        android:padding="15dp"
+        android:gravity="center" />
+
+</LinearLayout>

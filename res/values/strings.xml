@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TrainTicketQuery</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    
+    <string name="confirm">"确认"</string>
+    <string name="cancel">"取消"</string>
+    <string name="network_title">网络连接提示</string>
+    <string name="network_explain">设备没有连接网络，请点击下面按钮进行相应网络的连接设置。</string>
+    <string name="network_mobile_button_text">移动网络</string>
+    <string name="network_wifi_button_text">无线网络</string>
+	<string name="train_ticket_inquire">火车票查询</string>
+    <string name="train_start_place">"始发地: "</string>
+    <string name="train_start_place_default">"杭州"</string>
+    <string name="train_end_place">"目的地: "</string>
+    <string name="train_end_place_default">"北京"</string>
+    <string name="train_pre_day">"前一天"</string>
+    <string name="train_target_day">"Y年M月D日 周W"</string>
+    <string-array name="train_week_day">
+        <item>日</item>
+        <item>一</item>
+        <item>二</item>
+        <item>三</item>
+        <item>四</item>
+        <item>五</item>
+        <item>六</item>
+    </string-array>
+    <string name="train_next_day">"后一天"</string>
+    <string name="train_inquire">"查询"</string>
+    <string name="train_seat_type">"座位类型"</string>
+    <string name="hour">小时</string>
+    <string name="train_price_unit">"元"</string>
+    <string name="train_ticket_unit">"张"</string>
+    <string name="please_input_place">"请输入始发地与目的地, 谢谢"</string>
+    <string name="date_error">"时间错误: 选择区间为往后60天(包括今天)"</string>
+    <string name="ticket_info_title">"当前车次余票信息如下:"</string>
+
+</resources>

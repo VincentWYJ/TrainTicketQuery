@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp" >
+  
+    <LinearLayout 
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal" >
+        
+        <TextView
+            style="@style/TrainTicket"
+            android:id="@+id/from"
+            android:layout_weight="0.2" />
+        
+        <TextView
+            style="@style/TrainTicket"
+            android:id="@+id/train_no"
+            android:layout_weight="0.25" />
+        
+		<TextView
+            style="@style/TrainTicket"
+            android:id="@+id/start_time"
+            android:layout_weight="0.15" />
+        
+        <TextView
+            style="@style/TrainTicket"
+            android:text="@string/train_seat_type"
+            android:layout_weight="0.2" />
+        
+        <TextView
+            style="@style/TrainTicket"
+            android:id="@+id/seat_price"
+            android:layout_weight="0.2" />
+        
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal"
+    	android:layout_marginTop="5dp" >
+
+        <TextView
+            style="@style/TrainTicket"
+            android:id="@+id/to"
+            android:layout_weight="0.2" />
+        
+        <TextView
+            style="@style/TrainTicket"
+            android:id="@+id/duration"
+            android:layout_weight="0.25" />
+        
+        <TextView
+            style="@style/TrainTicket"
+            android:id="@+id/end_time"
+            android:layout_weight="0.15" />
+        
+        <TextView
+            style="@style/TrainTicket"
+            android:id="@+id/seat"
+            android:layout_weight="0.2" />
+        
+        <TextView
+            style="@style/TrainTicket"
+            android:id="@+id/remain_num"
+            android:layout_weight="0.2" />
+        
+    </LinearLayout>
+    
+</LinearLayout>

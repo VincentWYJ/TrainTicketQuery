@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#ffffffff" >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ff000000"
+        android:padding="15dp"
+        android:visibility="gone" />
+    
+    <View 
+        style="@style/TrainLine"
+        android:visibility="gone" />
+    
+    <DatePicker
+        android:id="@+id/train_datepicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:calendarViewShown="false"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="10dp" />
+    
+    <View 
+        style="@style/TrainLine" />
+    
+    <LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="60dp"
+	    android:padding="0dp"
+	    android:orientation="horizontal"
+	    android:gravity="center" >
+	    
+	    <TextView
+			android:id="@+id/date_cancel"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:text="@string/cancel"
+	        android:textColor="#ff000000"
+	        android:gravity="center" />
+	    
+	    <View 
+        	android:layout_width="0.5dp"
+	        android:layout_height="match_parent"
+	        android:background="#ffff0000" />
+	    
+	    <TextView
+			android:id="@+id/date_confirm"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:text="@string/confirm"
+	        android:textColor="#ff000000"
+	        android:gravity="center" />
+	    
+	</LinearLayout>
+
+</LinearLayout>

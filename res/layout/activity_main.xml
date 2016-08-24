@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal"
+    	android:gravity="center"
+    	android:layout_marginTop="5dp"
+    	android:layout_marginBottom="5dp" >
+    	
+        <TextView
+            style="@style/TrainTicket"
+            android:layout_weight="0.17"
+            android:text="@string/train_start_place" />
+        
+        <EditText
+            style="@style/TrainTicket"
+            android:id="@+id/train_start_place"
+            android:layout_weight="0.28"
+            android:text="@string/train_start_place_default" />
+        
+        <ImageView 
+            style="@style/TrainTicket"
+            android:id="@+id/place_swap"
+            android:layout_weight="0.1"
+            android:src="@drawable/swap" />
+        
+        <TextView
+            style="@style/TrainTicket"
+            android:layout_weight="0.17"
+            android:text="@string/train_end_place" />
+        
+        <EditText
+            style="@style/TrainTicket"
+            android:id="@+id/train_end_place"
+            android:layout_weight="0.28"
+            android:text="@string/train_end_place_default" />
+        
+    </LinearLayout>
+    
+    <View 
+        style="@style/TrainLine" />
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal"
+    	android:layout_marginTop="12dp"
+    	android:layout_marginBottom="12dp" >
+        
+        <TextView
+            style="@style/TrainTicket"
+            android:id="@+id/train_pre_day"
+            android:layout_weight="0.7"
+            android:text="@string/train_pre_day"
+            android:visibility="gone" />
+        
+        <TextView
+            style="@style/TrainTicket"
+            android:id="@+id/train_target_day"
+            android:layout_weight="0.3"
+            android:text="@string/train_target_day"
+            android:drawableEnd="@drawable/arrow_down"
+            android:drawablePadding="2dp" />
+        
+        <TextView
+            style="@style/TrainTicket"
+            android:id="@+id/train_next_day"
+            android:layout_weight="0.2"
+            android:text="@string/train_next_day"
+            android:visibility="gone" />
+        
+        <TextView
+            style="@style/TrainTicket"
+            android:id="@+id/train_inquire"
+            android:layout_weight="0.3"
+            android:text="@string/train_inquire" />
+        
+	</LinearLayout>
+	
+    <View 
+        style="@style/TrainLine" />
+	
+    <ListView
+        android:id="@+id/train_result"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp" />
+    
+</LinearLayout>
